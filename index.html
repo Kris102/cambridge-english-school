@@ -12,7 +12,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
@@ -24,14 +23,19 @@
         <span class="brand-loc">Haldwani, Uttarakhand</span>
       </span>
     </a>
+
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
       <span></span><span></span><span></span>
     </button>
+
     <nav class="site-nav" id="siteNav">
       <a href="#about">About</a>
       <a href="#pillars">Our Values</a>
       <a href="#founder">Founder</a>
       <a href="#programs">Programs</a>
+      <a href="#uniform">Uniform</a>
+      <a href="#books">Books</a>
+      <a href="#fee">Fee</a>
       <a href="#admissions">Admissions</a>
       <a href="#contact">Contact</a>
       <a href="tel:+919719119474" class="nav-call">Call to Enquire</a>
@@ -66,6 +70,33 @@
         <span>Bhotia Parao, Haldwani</span>
       </div>
     </div>
+  </section>
+
+  <!-- HOME PHOTO CAROUSEL -->
+  <section class="home-carousel" id="campus-carousel" aria-label="Photos from around the school">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-slide is-active">
+        <img src="assets/carousel/building-1.jpg" alt="Cambridge English School building — front view">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/carousel/building-2.jpg" alt="Cambridge English School building — view 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/carousel/building-3.jpg" alt="Cambridge English School building — view 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/carousel/building-4.jpg" alt="Cambridge English School building — view 4">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/carousel/building-5.jpg" alt="Cambridge English School building — view 5">
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/carousel/building-6.jpg" alt="Cambridge English School building — view 6">
+      </div>
+    </div>
+    <button class="carousel-arrow prev" id="carouselPrev" aria-label="Previous photo">‹</button>
+    <button class="carousel-arrow next" id="carouselNext" aria-label="Next photo">›</button>
+    <div class="carousel-dots" id="carouselDots"></div>
   </section>
 
   <!-- ABOUT / VISION & MISSION -->
@@ -139,21 +170,35 @@
   <!-- FOUNDER -->
   <section class="founder" id="founder">
     <div class="wrap founder-inner">
-      <div class="founder-frame" aria-hidden="true">
-        <img src="assets/logo.png" alt="">
+      <div class="founder-frame">
+        <img src="assets/founder/principal-4.jpg" alt="Deepak Arya, Founder & Principal of Cambridge English School">
       </div>
       <div class="founder-copy">
         <p class="founder-label">Founder &amp; Principal</p>
         <h2>Deepak Arya</h2>
         <p>Deepak Arya founded Cambridge English School after 32 years in education. Over that time, he has taught English communication with a foundation in spirituality to thousands of students across Haldwani.</p>
         <p>A black belt in martial arts, he has served on the executive committee of the Human Rights Association, affiliated with the United Nations, and has contributed to news channels and publications including Lead India News.</p>
-        <p class="founder-books-label">He has written three books, taught in medical and management colleges across the region:</p>
-        <ul class="founder-books">
-          <li>Bhagwad Gita with Personality Development</li>
-          <li>Healing from the Essence of Hanuman Chalisa</li>
-          <li>Learn Spoken English</li>
-        </ul>
+        <div class="founder-books-row">
+          <img class="founder-book-cover" src="assets/founder/book-by-principal.jpg" alt="Book authored by Deepak Arya, founder of Cambridge English School">
+          <div>
+            <p class="founder-books-label">He has written three books, taught in medical and management colleges across the region:</p>
+            <ul class="founder-books">
+              <li>Bhagwad Gita with Personality Development</li>
+              <li>Healing from the Essence of Hanuman Chalisa</li>
+              <li>Learn Spoken English</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="wrap founder-gallery">
+      <img src="assets/founder/principal-1.jpg" alt="Deepak Arya, Founder & Principal, photo 1">
+      <img src="assets/founder/principal-2.jpg" alt="Deepak Arya, Founder & Principal, photo 2">
+      <img src="assets/founder/principal-3.jpg" alt="Deepak Arya, Founder & Principal, photo 3">
+      <img src="assets/founder/principal-4.jpg" alt="Deepak Arya, Founder & Principal, photo 4">
+      <img src="assets/founder/principal-5.jpg" alt="Deepak Arya, Founder & Principal, photo 5">
+      <img src="assets/founder/principal-6.jpg" alt="Deepak Arya, Founder & Principal, photo 6">
     </div>
   </section>
 
@@ -182,6 +227,103 @@
           <p>Short daily practice so children build the habit of stillness early.</p>
         </div>
       </div>
+
+      <div class="programs-photos">
+        <figure>
+          <img src="assets/programs/spirituality-1.jpg" alt="Spiritual practice at Cambridge English School">
+          <figcaption>Spiritual Life at School</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/programs/spirituality-2.jpg" alt="Spiritual practice at Cambridge English School, photo 2">
+          <figcaption>Spiritual Life at School</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNIFORM -->
+  <section class="uniform" id="uniform">
+    <div class="wrap uniform-inner">
+      <div class="uniform-head">
+        <h2>School Uniform</h2>
+        <p>Summer and winter uniforms, along with the official school badge, as shown below.</p>
+      </div>
+
+      <div class="uniform-gallery">
+        <figure class="uniform-photo">
+          <div class="uniform-photo-frame uniform-photo-pair">
+            <img src="assets/uniform/summer-shirt.jpg" alt="Summer uniform shirt">
+            <img src="assets/uniform/summer-pants.jpg" alt="Summer uniform pants">
+          </div>
+          <figcaption>Summer Uniform</figcaption>
+        </figure>
+        <figure class="uniform-photo">
+          <div class="uniform-photo-frame">
+            <img src="assets/uniform/winter.jpg" alt="Winter uniform">
+          </div>
+          <figcaption>Winter Uniform</figcaption>
+        </figure>
+      </div>
+
+      <div class="uniform-notice">
+        <h3>A Note on Uniforms</h3>
+        <p>Dear Parents,</p>
+        <p>Please purchase your child's uniform only from our approved vendors, matching the summer and winter designs shown above. This helps keep the uniform consistent for every child at school.</p>
+        <ul>
+          <li>The official school cloth badge is available from the school office for <strong>₹50</strong>.</li>
+          <li>Please have the badge neatly stitched onto the uniform before it is worn to school.</li>
+        </ul>
+        <p>Thank you for your cooperation.</p>
+        <p class="uniform-signoff"><strong>Cambridge English School</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKS -->
+  <section class="books" id="books">
+    <div class="wrap books-inner">
+      <h2>Books &amp; Stationery</h2>
+      <p>Class-wise book lists and stationery details will be published here shortly. In the meantime, please contact the school office for the current list for your child's class.</p>
+    </div>
+  </section>
+
+  <!-- FEE STRUCTURE -->
+  <section class="fee" id="fee">
+    <div class="wrap fee-inner">
+      <div class="fee-head">
+        <h2>Fee Structure</h2>
+        <p>Monthly fees by class.</p>
+      </div>
+
+      <div class="fee-table-wrap">
+        <table class="fee-table">
+          <thead>
+            <tr><th>Class</th><th>Monthly Fee</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pre-Nursery / Play</td><td>₹2,500</td></tr>
+            <tr><td>Nursery</td><td>₹2,750</td></tr>
+            <tr><td>LKG</td><td>₹2,750</td></tr>
+            <tr><td>UKG</td><td>₹2,850</td></tr>
+            <tr><td>Class 1</td><td>₹2,900</td></tr>
+            <tr><td>Class 2</td><td>₹3,200</td></tr>
+            <tr><td>Class 3</td><td>₹3,350</td></tr>
+            <tr><td>Class 4</td><td>₹3,350</td></tr>
+            <tr><td>Class 5</td><td>₹3,350</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="fee-notes">
+        <h3>Important Fee Information</h3>
+        <ul>
+          <li><strong>One-time Admission Fee:</strong> A one-time, non-refundable admission fee applies at the time of admission.</li>
+          <li><strong>Monthly Fee System:</strong> Fees are collected monthly, not on a quarterly basis.</li>
+          <li><strong>Fee Includes:</strong> Tuition, activities, English communication, personality development, summer air-conditioned classes, and other school facilities.</li>
+          <li><strong>Vacations:</strong> Summer, winter and other declared holidays are part of the school's academic calendar. An additional ₹100 applies during the month of unit tests and examinations.</li>
+          <li><strong>Transport:</strong> The school does not provide a transport facility.</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -206,16 +348,18 @@
     </div>
   </section>
 
-  <!-- CAMPUS LIFE / GALLERY PLACEHOLDER -->
+  <!-- CAMPUS LIFE / GALLERY -->
   <section class="gallery" id="gallery">
     <div class="wrap">
       <h2>Campus Life</h2>
-      <p class="gallery-note">Photos from assembly, classrooms and activities will go here — swap these tiles for real photos in <code>assets/gallery/</code>.</p>
+      <p class="gallery-note">Moments from activities, assembly and everyday school life.</p>
       <div class="gallery-grid">
-        <div class="gallery-tile"><span>Assembly</span></div>
-        <div class="gallery-tile"><span>Classrooms</span></div>
-        <div class="gallery-tile"><span>Martial Arts</span></div>
-        <div class="gallery-tile"><span>Yagya &amp; Prayer</span></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-1.jpg" alt="School activity, photo 1"></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-2.jpg" alt="School activity, photo 2"></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-3.jpg" alt="School activity, photo 3"></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-4.jpg" alt="School activity, photo 4"></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-5.jpg" alt="School activity, photo 5"></div>
+        <div class="gallery-tile"><img src="assets/gallery/activity-6.jpg" alt="School activity, photo 6"></div>
       </div>
     </div>
   </section>
@@ -230,19 +374,16 @@
       <p class="footer-name">Cambridge English School</p>
       <p class="footer-tag">Play Group – Class 8 · Haldwani, Uttarakhand</p>
     </div>
-
     <div class="footer-col">
       <h3>Visit</h3>
       <p>Bareilly–Nainital Road,<br>Behind Sarnakothi, Bhotia Parao,<br>Next to Degree College,<br>Haldwani, Uttarakhand 263139</p>
       <a href="https://maps.app.goo.gl/CC45ni58683K6FFfA" class="footer-link" target="_blank" rel="noopener">Get Directions →</a>
     </div>
-
     <div class="footer-col">
       <h3>Contact</h3>
       <p><a href="tel:+919719119474">+91 97191 19474</a></p>
       <p><a href="https://wa.me/919719119474" target="_blank" rel="noopener">WhatsApp Us</a></p>
     </div>
-
     <div class="footer-col">
       <h3>Follow</h3>
       <p><a href="https://www.instagram.com/cambridgeenglishschoolhld" target="_blank" rel="noopener">Instagram — @cambridgeenglishschoolhld</a></p>
@@ -268,7 +409,52 @@
       navToggle.setAttribute('aria-expanded', false);
     });
   });
-</script>
 
+  // Home photo carousel
+  (function () {
+    const track = document.getElementById('carouselTrack');
+    if (!track) return;
+    const slides = Array.from(track.querySelectorAll('.carousel-slide'));
+    const dotsWrap = document.getElementById('carouselDots');
+    const prevBtn = document.getElementById('carouselPrev');
+    const nextBtn = document.getElementById('carouselNext');
+    let index = 0;
+    let timer;
+
+    slides.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+      if (i === 0) dot.classList.add('is-active');
+      dot.addEventListener('click', () => goTo(i));
+      dotsWrap.appendChild(dot);
+    });
+    const dots = Array.from(dotsWrap.children);
+
+    function goTo(i) {
+      slides[index].classList.remove('is-active');
+      dots[index].classList.remove('is-active');
+      index = (i + slides.length) % slides.length;
+      slides[index].classList.add('is-active');
+      dots[index].classList.add('is-active');
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    function startAutoplay() {
+      timer = setInterval(next, 4000);
+    }
+    function stopAutoplay() {
+      clearInterval(timer);
+    }
+
+    nextBtn.addEventListener('click', () => { next(); stopAutoplay(); startAutoplay(); });
+    prevBtn.addEventListener('click', () => { prev(); stopAutoplay(); startAutoplay(); });
+    track.addEventListener('mouseenter', stopAutoplay);
+    track.addEventListener('mouseleave', startAutoplay);
+
+    startAutoplay();
+  })();
+</script>
 </body>
 </html>

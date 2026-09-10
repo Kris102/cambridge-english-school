@@ -7,6 +7,23 @@
 main img {
   max-width: 100%;
 }
+/* Prevent mobile "grid blowout": without this, a grid item's minimum
+   width defaults to its image's natural size, which can push the
+   whole grid wider than the phone's viewport. */
+.gallery-grid,
+.founder-gallery,
+.programs-photos,
+.uniform-gallery,
+.uniform-photo-pair {
+  min-width: 0;
+}
+.gallery-tile,
+.founder-gallery img,
+.programs-photos figure,
+.uniform-photo,
+.uniform-photo-frame {
+  min-width: 0;
+}
 
 /* ---- Home photo carousel ---- */
 .home-carousel {

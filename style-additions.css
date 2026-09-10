@@ -3,6 +3,11 @@
    Append this to the end of style.css
    ============================================ */
 
+/* Safety net: content images never exceed their container */
+main img {
+  max-width: 100%;
+}
+
 /* ---- Home photo carousel ---- */
 .home-carousel {
   position: relative;
@@ -275,17 +280,28 @@
   display: block;
 }
 
-/* ---- Gallery tiles with real photos ---- */
+/* ---- Gallery: layout + tiles with real photos ---- */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .gallery-tile {
   overflow: hidden;
   border-radius: 10px;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  max-width: 100%;
 }
 .gallery-tile img {
+  display: block;
   width: 100%;
   height: 100%;
-  aspect-ratio: 4 / 3;
+  max-width: 100%;
   object-fit: cover;
-  display: block;
 }
 
 /* ---- About: Our Vision photo ---- */
